@@ -1,0 +1,10 @@
+@mixin wh($w, $h) {
+	width: $w;
+	height: $h;
+}
+
+@mixin font($font-size,$line-heigiht,$font-family) {
+	font-size:$font-size ;
+	line-heigiht:$line-heigiht;
+	font-family:$font-family;
+}
