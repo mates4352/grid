@@ -1,0 +1,59 @@
+.burger {
+	align-self: flex-start;
+	margin: 25px 0;
+	@include wh(35px,25px);
+
+	@extend %pos-rel;
+}
+
+.burger span,
+.burger::after,
+.burger::before{
+	content: "";
+	@include wh(100%,2px);
+
+	position:absolute;
+	bottom:100%;
+	left:0;
+
+	background-color: #000;
+	
+	transition: top 500ms ease, transform 500ms ease;
+}
+
+.burger span{
+	top:50%;
+	
+}
+
+.burger::before{
+	top:100%;
+
+	transition: top 500ms ease, transform 500ms ease;
+}
+
+.burger::after{
+	top: 0%;
+
+	transition: top 500ms ease, transform 500ms ease;
+}
+
+.burger.active span{
+	transform: scale(0);
+
+	transition: top 500ms ease, transform 500ms ease;
+}
+
+.burger.active::before{
+	top:40%;
+
+	transform: rotate(45deg);
+	transition: top 500ms ease, transform 500ms ease;
+}
+
+.burger.active::after {
+	top:40%;
+
+	transform: rotate(-45deg);
+	transition: all 500ms ease;
+}
