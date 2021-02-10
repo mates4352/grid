@@ -200,7 +200,7 @@ function clean() {
 
 function watchFiles() {
 	gulp.watch([path.watch.html], html,)
-	gulp.watch([path.watch.style], styleWatch)
+	gulp.watch([path.watch.style], css)
 	gulp.watch([path.watch.js], js)
 	gulp.watch([path.watch.images], images)
 }
