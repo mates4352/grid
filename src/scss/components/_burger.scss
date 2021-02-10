@@ -4,6 +4,7 @@
 	margin: 25px 0;
 
 	@extend %pos-rel;
+	z-index: 999;
 
 	cursor: pointer;
 
