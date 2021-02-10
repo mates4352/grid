@@ -1,9 +1,15 @@
-.burger {
+.burger {	
+	@include wh(35px,25px);
 	align-self: flex-start;
 	margin: 25px 0;
-	@include wh(35px,25px);
 
 	@extend %pos-rel;
+
+	cursor: pointer;
+
+	@media screen and(max-width:992px){
+		align-self: center;
+	}
 }
 
 .burger span,
