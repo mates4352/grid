@@ -1,5 +1,5 @@
 
-const title = document.querySelector('.header__title')
+const title = document.querySelector('.header-description__title ')
 let text = 'Ali Sayed’s <span>Web Designing</span> Project'
 let text2 = 'Ali Sayed’s Web Designing Project'
 let count = 0
